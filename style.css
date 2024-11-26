@@ -19,14 +19,14 @@ h1, h2 {
     color: #fff; /* White text color for contrast */
 }
 
-/* Header Section - Black Box Background */
+/* Header Section - Black Background */
 header {
-    background-color: #001f3d; /* Navy Blue Dark Background */
+    background-color: #000; /* Black Background */
     padding: 20px 0;
 }
 
 .header-box {
-    background-color: #001f3d; /* Navy Blue Dark Background */
+    background-color: #000; /* Black Background */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -65,21 +65,6 @@ h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: #fff; /* White text color for readability */
     margin-bottom: 20px;
-    position: relative; /* Allow positioning */
-}
-
-/* Sticky Box Styles to Prevent Scrolling */
-.sticky-box {
-    position: fixed;
-    top: 20%; /* Adjust this based on where you want the box */
-    left: 10%;
-    width: 75%; /* Adjust size to fit your needs */
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    z-index: 10;
 }
 
 /* Section Styling */
@@ -117,7 +102,7 @@ h1 {
 
 /* Footer Styling */
 footer {
-    background-color: #001f3d; /* Navy Blue Dark Background */
+    background-color: #000; /* Black Background */
     color: white;
     padding: 20px;
     text-align: center;
