@@ -88,9 +88,15 @@ h1 {
 }
 
 .section p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px; /* Increased font size for paragraphs */
+    line-height: 1.6;
     color: #fff; /* White text for readability */
+}
+
+.section h2 {
+    font-size: 2rem; /* Increased font size for headings */
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 /* Button Style */
@@ -115,10 +121,6 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
 
 footer p {
