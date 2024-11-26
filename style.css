@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Blue to purple gradient */
     color: #333;
     line-height: 1.6;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(90deg, #ff5722, #ff9800);
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
     color: #fff;
     padding: 1.5em 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -57,89 +57,45 @@ nav a:hover {
 .section {
     padding: 4em 0;
     text-align: center;
-}
-
-.section:nth-of-type(even) {
-    background: linear-gradient(90deg, #f1f8e9, #e8f5e9);
-}
-
-.section:nth-of-type(odd) {
-    background: linear-gradient(90deg, #e3f2fd, #bbdefb);
+    color: #fff;
 }
 
 .section h2 {
     margin-bottom: 1em;
     font-size: 2em;
-    color: #ff5722;
+    color: #fff;
 }
 
 .section p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
-    color: #555;
-}
-
-/* Images */
-.container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1em;
-    border: 3px solid #ff5722;
 }
 
 /* Buttons */
 .button {
-    display: inline-block;
-    background: #ff5722;
+    display: block;
+    width: max-content;
+    margin: 1em auto; /* Center the buttons */
+    background: #4e54c8;
     color: #fff;
     text-decoration: none;
     padding: 0.8em 1.2em;
     font-size: 1.1em;
     border-radius: 25px;
     transition: background 0.3s, transform 0.2s;
+    text-align: center;
 }
 
 .button:hover {
-    background: #e64a19;
+    background: #373b93;
     transform: scale(1.1);
-}
-
-/* Blockquote */
-blockquote {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #777;
-    margin: 2em auto;
-    border-left: 5px solid #ff5722;
-    padding: 0.5em 1em;
-    max-width: 700px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
 footer {
-    background: #333;
+    background: #373b93;
     color: #fff;
     padding: 1em 0;
     text-align: center;
     font-size: 0.9em;
-}
-
-footer a {
-    color: #ff5722;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
