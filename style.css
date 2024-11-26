@@ -3,99 +3,111 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Blue to purple gradient */
+    background: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header Styles */
-header {
-    background: linear-gradient(90deg, #4e54c8, #8f94fb);
-    color: #fff;
-    padding: 1.5em 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Header */
+header {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 2rem 0;
 }
 
 header h1 {
+    font-size: 2.5rem;
     margin: 0;
-    font-size: 2.5em;
-    font-family: 'Georgia', serif;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+header p {
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
 }
 
-nav li {
-    margin-left: 1.5em;
+/* About Section */
+#about {
+    background: #fff;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-nav a {
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4e54c8;
+}
+
+#about p {
+    font-size: 1.1rem;
+}
+
+/* Novel Section */
+#novel {
+    background: #fff;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#novel h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4e54c8;
+}
+
+.novel-info img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.novel-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.novel-info .button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
     color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 0.5em 0.8em;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    transform: scale(1.1);
-}
-
-/* Section Styles */
-.section {
-    padding: 4em 0;
-    text-align: center;
-    color: #fff;
-}
-
-.section h2 {
-    margin-bottom: 1em;
-    font-size: 2em;
-    color: #fff;
-}
-
-.section p {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
-}
-
-/* Buttons */
-.button {
-    display: block;
-    width: max-content;
-    margin: 1em auto; /* Center the buttons */
     background: #4e54c8;
-    color: #fff;
     text-decoration: none;
-    padding: 0.8em 1.2em;
-    font-size: 1.1em;
     border-radius: 25px;
-    transition: background 0.3s, transform 0.2s;
-    text-align: center;
+    transition: background 0.3s;
 }
 
-.button:hover {
+.novel-info .button:hover {
     background: #373b93;
-    transform: scale(1.1);
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background: #373b93;
+    background: #333;
     color: #fff;
-    padding: 1em 0;
     text-align: center;
-    font-size: 0.9em;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #8f94fb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
