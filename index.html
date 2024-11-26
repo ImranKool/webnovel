@@ -1,128 +1,74 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil's Curse - Official Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-box">
+                <h1>Devil's Curse</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#novel">My Novel</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="box">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Imran H" class="profile-pic">
+            <p>Welcome to my official website! I am Imran H, an aspiring writer with a passion for storytelling. "Devil's Curse" is my first web novel, set in the Great Sengoku Period, exploring themes of honor, vengeance, and supernatural battles.</p>
+        </div>
+    </section>
 
-h1, h2 {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: #fff; /* White text color for contrast */
-}
+    <!-- My Novel Section -->
+    <section id="novel" class="section">
+        <div class="box">
+            <h2>My Novel</h2>
+            <div class="novel-info">
+                <img src="poster.jpg" alt="Devil's Curse Poster" class="novel-poster">
+                <div class="novel-details">
+                    <p><strong>Synopsis:</strong> Set during the tumultuous Great Sengoku Period (1460s-1560s CE), a desperate clan member sought to gain supernatural powers by negotiating with demons sealed away by the legendary samurai Raiden Takeshi. His actions shattered the seal, unleashing demons that dominated and enslaved humanity, forcing teenagers to become curse samurai who gain demonic powers only to serve their leaders.</p>
+                    <p>Amidst this chaos, 17-year-old Ryuji seeks vengeance after his father is brutally murdered. Determined to find the culprit and avenge his father’s death, Ryuji embarks on a perilous journey, holding onto a promise made to his childhood friend, with whom he shares a deep love.</p>
+                    <a href="https://www.honeyfeed.fm/novels/17608" class="button" target="_blank">Read on Honeyfeed.fm</a>
+                    <blockquote>"In a world where demons reign, only those who dare to confront the darkness can hope to bring back the light."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Header Section - Black Box Background */
-header {
-    background-color: #001f3d; /* Navy Blue Dark Background */
-    padding: 20px 0;
-}
+    <!-- Feedback Section -->
+    <section id="feedback" class="section">
+        <div class="box">
+            <h2>Feedback</h2>
+            <p>I would love to hear your thoughts and feedback on "Devil's Curse." Please feel free to send me your comments and suggestions via email at <a href="mailto:alimranhussain4@gmail.com">alimranhussain4@gmail.com</a>.</p>
+        </div>
+    </section>
 
-.header-box {
-    background-color: #001f3d; /* Navy Blue Dark Background */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="box">
+            <h2>Contact</h2>
+            <p>For any inquiries or further information, you can reach me via email at <a href="mailto:alimranhussain4@gmail.com">alimranhussain4@gmail.com</a>.</p>
+        </div>
+    </section>
 
-h1 {
-    font-size: 2.5rem; /* Larger font size for header */
-}
-
-/* Profile Pic Style */
-.profile-pic {
-    display: block;
-    margin: 20px auto;
-    width: 200px; /* Adjust this value to change size */
-    height: auto;
-    border-radius: 50%;
-    border: 4px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* For the novel poster */
-.novel-poster {
-    width: 45%; /* Increased size */
-    max-width: 800px; /* Maximum width limit */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
-}
-
-/* Box Style for Sections */
-.box {
-    background-color: #000; /* Black box background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: #fff; /* White text color for readability */
-    margin-bottom: 20px;
-    position: relative; /* Allow positioning */
-}
-
-/* Sticky Box Styles to Prevent Scrolling */
-.sticky-box {
-    position: fixed;
-    top: 20%; /* Adjust this based on where you want the box */
-    left: 10%;
-    width: 75%; /* Adjust size to fit your needs */
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    z-index: 10;
-}
-
-/* Section Styling */
-.section {
-    margin: 50px 0;
-}
-
-.section p {
-    font-size: 18px; /* Increased font size for paragraphs */
-    line-height: 1.6;
-    color: #fff; /* White text for readability */
-}
-
-.section h2 {
-    font-size: 2rem; /* Increased font size for headings */
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-/* Button Style */
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.button:hover {
-    background-color: #555;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #001f3d; /* Navy Blue Dark Background */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Imran H. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
