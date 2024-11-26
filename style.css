@@ -81,15 +81,46 @@ header nav ul li a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Novel Poster */
-.novel-info img {
+/* For the novel poster */
+.novel-info img.novel-poster {
+    width: 500px !important; /* Force the width to 500px */
+    height: auto !important;  /* Maintain aspect ratio */
+    max-width: none !important; /* Disable any max-width limit */
     border-radius: 10px;
-    width: 500px !important;
-    max-width: 100% !important;
-    height: auto !important;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Additional styles to ensure image fits inside its container properly */
+.novel-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start; /* Avoid centering */
+}
+
+.novel-info div {
+    flex-grow: 1;
+    max-width: 600px; /* Restrict text width for better readability */
+}
+
+/* Ensure the container allows the poster to show properly */
+.section {
+    margin: 50px 0;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Black text color */
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #333; /* Black text color */
     margin-bottom: 15px;
 }
+
 
 /* Button Style */
 .button {
