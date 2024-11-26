@@ -5,29 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devil's Curse - Official Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const links = document.querySelectorAll('nav a');
-            links.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = e.target.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    window.scrollTo({
-                        top: targetSection.offsetTop,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1><i class="fa-solid fa-book"></i> Devil's Curse</h1>
+            <h1>Devil's Curse</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -39,52 +21,46 @@
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
             <img src="file-imran_h_profile.jpg" alt="Imran H" class="profile-pic">
-            <p>Welcome to my official website! I am Imran H, an aspiring writer with a passion for storytelling.</p>
-            <a href="#novel" class="button">Explore My Novel</a>
+            <p>Welcome to my official website! I am Imran H, an aspiring writer with a passion for storytelling. "Devil's Curse" is my first web novel, set in the Great Sengoku Period, exploring themes of honor, vengeance, and supernatural battles.</p>
         </div>
     </section>
 
-    <section id="novel">
+    <section id="novel" class="section">
         <div class="container">
             <h2>My Novel</h2>
             <div class="novel-info">
                 <img src="devils_curse_poster.jpg" alt="Devil's Curse Poster">
                 <div>
-                    <p><strong>Synopsis:</strong> Set during the Sengoku Period...</p>
-                    <a href="https://www.honeyfeed.fm/novels/17608" class="button" target="_blank"><i class="fa-solid fa-book-reader"></i> Read on Honeyfeed.fm</a>
+                    <p><strong>Synopsis:</strong> Set during the tumultuous Great Sengoku Period (1460s-1560s CE), a desperate clan member sought to gain supernatural powers by negotiating with demons sealed away by the legendary samurai Raiden Takeshi. His actions shattered the seal, unleashing demons that dominated and enslaved humanity, forcing teenagers to become curse samurai who gain demonic powers only to serve their leaders.</p>
+                    <p>Amidst this chaos, 17-year-old Ryuji seeks vengeance after his father is brutally murdered. Determined to find the culprit and avenge his father’s death, Ryuji embarks on a perilous journey, holding onto a promise made to his childhood friend, with whom he shares a deep love.</p>
+                    <a href="https://www.honeyfeed.fm/novels/17608" class="button" target="_blank">Read on Honeyfeed.fm</a>
+                    <blockquote>"In a world where demons reign, only those who dare to confront the darkness can hope to bring back the light."</blockquote>
                 </div>
             </div>
-            <blockquote>"In a world where demons reign, only those who dare to confront the darkness can hope to bring back the light."</blockquote>
         </div>
     </section>
 
-    <section id="feedback">
+    <section id="feedback" class="section">
         <div class="container">
             <h2>Feedback</h2>
-            <p>Share your thoughts on "Devil's Curse."</p>
-            <a href="mailto:alimranhussain4@gmail.com" class="button"><i class="fa-solid fa-envelope"></i> Send Feedback</a>
+            <p>I would love to hear your thoughts and feedback on "Devil's Curse." Please feel free to send me your comments and suggestions via email at <a href="mailto:alimranhussain4@gmail.com">alimranhussain4@gmail.com</a>.</p>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email me at: <a href="mailto:alimranhussain4@gmail.com"><i class="fa-solid fa-envelope"></i> alimranhussain4@gmail.com</a></p>
-            <div class="social-buttons">
-                <a href="#" class="button"><i class="fa-brands fa-twitter"></i> Twitter</a>
-                <a href="#" class="button"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                <a href="#" class="button"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            </div>
+            <p>For any inquiries or further information, you can reach me via email at <a href="mailto:alimranhussain4@gmail.com">alimranhussain4@gmail.com</a>.</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Imran H. All rights reserved. | <a href="#about">Back to Top</a></p>
+            <p>&copy; 2024 Imran H. All rights reserved.</p>
         </div>
     </footer>
 </body>
