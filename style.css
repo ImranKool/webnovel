@@ -83,12 +83,26 @@ header nav ul li a:hover {
 
 /* For the novel poster */
 .novel-info img.novel-poster {
-    width: 500px !important; /* Force the width to 500px */
-    height: auto !important;  /* Maintain aspect ratio */
-    max-width: none !important; /* Disable any max-width limit */
+    width: 300px !important; /* Smaller default size */
+    height: auto !important;
+    max-width: 100%; /* Prevent overflow */
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Consistent shadow */
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) { /* Tablets and smaller devices */
+    .novel-info img.novel-poster {
+        width: 250px; /* Reduce size for tablets */
+    }
+}
+
+@media (max-width: 480px) { /* Phones */
+    .novel-info img.novel-poster {
+        width: 200px; /* Further reduce size for phones */
+    }
+}
+
 
 /* Additional styles to ensure image fits inside its container properly */
 .novel-info {
