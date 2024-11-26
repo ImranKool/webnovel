@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
@@ -63,6 +64,22 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: #fff; /* White text color for readability */
+    margin-bottom: 20px;
+    position: relative; /* Allow positioning */
+}
+
+/* Sticky Box Styles to Prevent Scrolling */
+.sticky-box {
+    position: fixed;
+    top: 20%; /* Adjust this based on where you want the box */
+    left: 10%;
+    width: 75%; /* Adjust size to fit your needs */
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    z-index: 10;
 }
 
 /* Section Styling */
@@ -98,6 +115,10 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
 
 footer p {
