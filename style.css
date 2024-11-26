@@ -31,14 +31,13 @@ h1, h2 {
 
 /* For the novel poster */
 .novel-poster {
-    width: 60%; /* Adjust width to increase size */
-    max-width: 600px; /* Maximum width limit */
+    width: 45%; /* Increased size to 45% */
+    max-width: 700px; /* Maximum width limit */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
+    margin: 20px auto; /* Center the image */
 }
-
 
 /* Section Styling */
 .section {
@@ -56,7 +55,7 @@ h1, h2 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #003366; /* Dark Navy Blue */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -64,12 +63,12 @@ h1, h2 {
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #004080; /* Slightly lighter navy */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #003366; /* Dark Navy Blue */
     color: white;
     padding: 20px;
     text-align: center;
