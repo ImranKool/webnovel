@@ -1,118 +1,170 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e0e7ff, #ffffff);
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
-    text-align: center;
 }
 
-header {
-    background: #4e54c8;
-    color: white;
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-}
-
-header p {
-    margin: 1rem 0 0;
-    font-size: 1.5rem;
-}
-
-section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
+.container {
+    width: 80%;
     margin: 0 auto;
 }
 
-section h2 {
-    color: #4e54c8;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    border: 5px solid #4e54c8;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-.novel-info {
+nav ul {
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+    justify-content: center;
 }
 
-.novel-info img.poster {
-    width: 300px;
-    height: auto;
-    margin: 1.5rem auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+nav li {
+    margin: 0 15px;
 }
 
-.novel-info p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 1rem auto;
-    text-align: justify;
-}
-
-.button {
-    display: inline-block;
-    background: #4e54c8;
-    color: white;
+nav a {
+    color: #fff;
     text-decoration: none;
-    padding: 1rem 2rem;
-    font-size: 1.3rem;
-    border-radius: 30px;
-    transition: background 0.3s, transform 0.2s;
-    margin-top: 2rem;
+    font-size: 1.1em;
 }
 
-.button:hover {
-    background: #3e439a;
-    transform: scale(1.05);
-}
-
-footer {
-    background: #4e54c8;
-    color: white;
-    padding: 2rem 0;
-    font-size: 1.1rem;
-}
-
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    .novel-info {
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-    }
+/* Section Styles */
+.section {
+    padding: 40px 0;
+    text-align: center;
+    background: #fff;
+}
 
-    .novel-info p {
-        text-align: left;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Profile and Images */
+.profile-pic,
+.novel-poster {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 3px solid transparent; /* Transparent border to apply flame effect */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.novel-poster {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Animation: Flame or Sparks Effect */
+.profile-pic::before,
+.novel-poster::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid orange;
+    border-radius: 5px;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(255, 69, 0, 0.6), rgba(255, 140, 0, 0));
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7), 0 0 30px rgba(255, 140, 0, 0.5);
+    animation: flames 2s infinite alternate;
+}
+
+.profile-pic::before {
+    border-color: #ff4500; /* Flame color */
+}
+
+.novel-poster::before {
+    border-color: #ff6347; /* Flame color */
+}
+
+/* Flame Animation */
+@keyframes flames {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.6;
     }
+    50% {
+        transform: scale(1.05) rotate(10deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(-10deg);
+        opacity: 0.6;
+    }
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #555;
+}
+
+/* Blockquote */
+blockquote {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #555;
+    margin: 30px auto;
+    border-left: 5px solid #333;
+    padding-left: 20px;
+    max-width: 600px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
