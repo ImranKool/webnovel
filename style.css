@@ -3,60 +3,43 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f4f4f4;
 }
 
-/* Container */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Styling */
-header {
-    background-color: #001f3d; /* Dark Navy Blue */
-    color: white;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
+h1, h2 {
     text-align: center;
-    font-size: 2rem;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* White text color for contrast */
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Header Section - Black Box Background */
+header {
+    background-color: #001f3d; /* Navy Blue Dark Background */
+    padding: 20px 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.header-box {
+    background-color: #001f3d; /* Navy Blue Dark Background */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+h1 {
+    font-size: 2.5rem; /* Larger font size for header */
 }
 
 /* Profile Pic Style */
 .profile-pic {
     display: block;
     margin: 20px auto;
-    width: 200px; /* Adjust size as needed */
+    width: 200px; /* Adjust this value to change size */
     height: auto;
     border-radius: 50%;
     border: 4px solid #333;
@@ -65,36 +48,32 @@ nav ul li a:hover {
 
 /* For the novel poster */
 .novel-poster {
-    width: 45%; /* Increased size of the poster */
-    max-width: 650px; /* Maximum width limit */
+    width: 45%; /* Increased size */
+    max-width: 800px; /* Maximum width limit */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 20px 0;
 }
 
-/* Section Styling */
-.section {
-    margin: 80px 0 50px 0;
-    padding: 20px 0;
-    text-align: center;
+/* Box Style for Sections */
+.box {
+    background-color: #000; /* Black box background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff; /* White text color for readability */
 }
 
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+/* Section Styling */
+.section {
+    margin: 50px 0;
 }
 
 .section p {
     font-size: 16px;
     line-height: 1.5;
-    color: #555;
-}
-
-.section blockquote {
-    margin-top: 20px;
-    font-style: italic;
-    color: #333;
+    color: #fff; /* White text for readability */
 }
 
 /* Button Style */
@@ -102,7 +81,7 @@ nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #001f3d; /* Dark Navy Blue */
+    background-color: #333;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -110,12 +89,12 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #003366; /* Lighter Navy Blue */
+    background-color: #555;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #001f3d; /* Dark Navy Blue */
+    background-color: #001f3d; /* Navy Blue Dark Background */
     color: white;
     padding: 20px;
     text-align: center;
