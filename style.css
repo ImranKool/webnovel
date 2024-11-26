@@ -1,170 +1,80 @@
-/* Reset some default styles */
-* {
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
-.section {
-    padding: 40px 0;
+h1, h2 {
     text-align: center;
-    background: #fff;
-}
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* Profile and Images */
-.profile-pic,
-.novel-poster {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 3px solid transparent; /* Transparent border to apply flame effect */
-}
-
+/* Profile Pic Style */
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid transparent;
-}
-
-.novel-poster {
-    width: 200px;
+    display: block;
+    margin: 20px auto;
+    width: 200px; /* Adjust this value to change size */
     height: auto;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Animation: Flame or Sparks Effect */
-.profile-pic::before,
-.novel-poster::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 3px solid orange;
-    border-radius: 5px;
-    z-index: -1;
-    background: radial-gradient(circle, rgba(255, 69, 0, 0.6), rgba(255, 140, 0, 0));
-    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7), 0 0 30px rgba(255, 140, 0, 0.5);
-    animation: flames 2s infinite alternate;
+/* Novel Poster Style */
+.novel-poster {
+    display: block;
+    margin: 20px auto;
+    width: 300px; /* Increase this to make the poster larger */
+    height: auto;
+    max-width: 100%;
+    border: 4px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-pic::before {
-    border-color: #ff4500; /* Flame color */
+/* Section Styling */
+.section {
+    margin: 50px 0;
 }
 
-.novel-poster::before {
-    border-color: #ff6347; /* Flame color */
+.section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
 }
 
-/* Flame Animation */
-@keyframes flames {
-    0% {
-        transform: scale(1) rotate(0deg);
-        opacity: 0.6;
-    }
-    50% {
-        transform: scale(1.05) rotate(10deg);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1) rotate(-10deg);
-        opacity: 0.6;
-    }
-}
-
-/* Buttons */
+/* Button Style */
 .button {
     display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
     margin-top: 20px;
-    transition: background 0.3s;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .button:hover {
-    background: #555;
+    background-color: #555;
 }
 
-/* Blockquote */
-blockquote {
-    font-size: 1.3em;
-    font-style: italic;
-    color: #555;
-    margin: 30px auto;
-    border-left: 5px solid #333;
-    padding-left: 20px;
-    max-width: 600px;
-}
-
-/* Footer Styles */
+/* Footer Styling */
 footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
